@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+} 
+
+@font-face {
+  font-family: 'Material Symbols Outlined';
+  font-style: normal;
+  src: url(https://example.com/material-symbols.woff) format('woff');
+}
+
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+}
+body{
+  display: flex;
+  flex-direction: row;
+}
+
+aside{
+  width: 18%;
+  height: 100vh;
+  background-color: rgba(255, 248, 234, 1);
+}
+
+#primeira-secao, #segunda-secao{
+  padding: 2rem;
+  padding-bottom: 0;
+}
+
+#segunda-secao{
+  padding-top: 0;
+}
+
+#perfil{
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+#informacoes-do-perfil{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#notificacao{
+  float: right;
+}
+
+#upload, .categoria{
+  display: flex;
+
+  align-items: center;
+  gap: 8px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-top: 15%;
+}
+
+.categoria{
+  margin-top: 0;
+}
+
+#linha{
+  border: 0.1px solid rgb(209, 209, 209);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+
+
+
