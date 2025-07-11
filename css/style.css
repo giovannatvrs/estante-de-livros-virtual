@@ -28,7 +28,7 @@ body{
 }
 
 aside{
-  width: 18%;
+  width: 20%;
   height: 100vh;
   background-color: rgba(255, 248, 234, 1);
 }
@@ -43,13 +43,13 @@ aside{
   padding-top: 0;
 }
 
-#perfil{
+#perfil, #tarefa{
   display: flex;
   justify-content: space-between;
   
 }
 
-#informacoes-do-perfil{
+#informacoes-do-perfil, #upload, .categoria, #nome{
   display: flex;
   align-items: center;
   gap: 8px;
@@ -60,10 +60,7 @@ aside{
 }
 
 #upload, .categoria{
-  display: flex;
-
-  align-items: center;
-  gap: 8px;
+  
   padding-top: 1rem;
   padding-bottom: 1rem;
   margin-top: 15%;
@@ -92,11 +89,24 @@ section{
   justify-content: flex-end;
   align-items: center;
   gap: 10px;
+  padding-bottom: 0;
 }
 
-h1{
+#conteúdo{
   padding-left: 4rem;
   padding-right: 4rem;
+  margin-top: 0;
+}
+
+#lista-de-tarefas{
+  border-top: 1px solid rgba(200, 198, 198, 1);
+  
+  padding: 1rem;
+}
+
+#acoes{
+  display: flex;
+  gap: 10px;
 }
 
 
