@@ -109,5 +109,9 @@ section{
   gap: 10px;
 }
 
+#caixa-de-selecao{
+  cursor: pointer;
+}
+
 
 
