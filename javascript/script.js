@@ -1,4 +1,4 @@
-const selecao = document.getElementById("caixa-de-selecao");
+const selecao = document.querySelector('.caixa-de-selecao');
 
 function marcarTarefa(){
     if(selecao.textContent == 'check_box_outline_blank'){
