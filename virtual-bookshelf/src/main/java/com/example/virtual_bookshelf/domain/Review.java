@@ -19,10 +19,11 @@ public class Review {
     ReviewId reviewId;
 
     @ManyToOne
-    @MapsId("id")
+    @MapsId("user_id")
     private User user;
 
     @ManyToOne
+    @MapsId("book_id")
     private Book book;
 
     @Column(name="rating")

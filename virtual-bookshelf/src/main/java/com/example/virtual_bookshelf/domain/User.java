@@ -32,6 +32,11 @@ public class User {
     @Column(name="profile_picture")
     private String profilePicture;
 
-    @OneToMany(mappedBy = "User")
+    @OneToMany(mappedBy = "user")
     private Set<Review> reviews;
+
+    @OneToMany(mappedBy = "user")
+    private Set<Lista> listas;
+
+
 }
