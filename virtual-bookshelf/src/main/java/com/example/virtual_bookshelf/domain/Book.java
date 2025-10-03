@@ -7,6 +7,9 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.hibernate.annotations.IdGeneratorType;
 
+import java.util.Set;
+import java.util.concurrent.Flow;
+
 @Setter
 @Getter
 @AllArgsConstructor
@@ -28,6 +31,12 @@ public class Book {
     @Column(name="genre")
     private String genre;
 
-    
+    @Enumerated(EnumType.STRING)
+    @Column(name="status")
+    private String status;
+
+    @ManyToOne
+    @JoinColumn(name="publisher_id")
+    private Publisher publisher;
     
 }
