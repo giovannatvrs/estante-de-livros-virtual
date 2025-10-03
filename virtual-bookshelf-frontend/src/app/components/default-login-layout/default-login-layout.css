@@ -1,0 +1,44 @@
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+section{
+    background-color: white;
+    height: 60%;
+    width: 25%;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    padding: 30px;
+    border-radius: 10px;
+
+}
+
+h1{
+   
+    font-size: 35px;
+}
+
+button{
+    color: white;
+    background-color: rgba(250, 102, 76, 1);
+    width: 150px;
+    height: 40px;
+    border-style: none;
+    font-size: 15px;
+    border-radius: 30px;
+}
+
+#link-cadastro{
+    color: rgba(250, 102, 76, 1);
+
+}
+
+#link-recuperacao{
+    font-size: 13px;
+    font-weight: 300;
+    text-align: right;
+}
