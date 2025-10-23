@@ -1,4 +1,4 @@
-package com.example.virtual_bookshelf.domain;
+package com.example.virtual_bookshelf.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -6,7 +6,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.util.Set;
+import java.util.List;
 
 @Getter
 @Setter
@@ -17,13 +17,13 @@ import java.util.Set;
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name="id")
+    @Column(name="user_id")
     private long id;
 
-    @Column(name="name")
+    @Column(name="user_name")
     private String name;
 
-    @Column(name="email")
+    @Column(name="user_email")
     private String email;
 
     @Column(name="password")
@@ -33,10 +33,10 @@ public class User {
     private String profilePicture;
 
     @OneToMany(mappedBy = "user")
-    private Set<Review> reviews;
+    private List<Review> reviews;
 
     @OneToMany(mappedBy = "user")
-    private Set<Lista> listas;
+    private List<Bookshelf> lists;
 
 
 }

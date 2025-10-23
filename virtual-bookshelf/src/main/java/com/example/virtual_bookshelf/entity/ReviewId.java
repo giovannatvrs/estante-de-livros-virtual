@@ -1,4 +1,4 @@
-package com.example.virtual_bookshelf.domain;
+package com.example.virtual_bookshelf.entity;
 
 import jakarta.persistence.Embeddable;
 import lombok.AllArgsConstructor;

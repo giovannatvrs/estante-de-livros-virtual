@@ -1,4 +1,4 @@
-package com.example.virtual_bookshelf.domain;
+package com.example.virtual_bookshelf.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -31,5 +31,7 @@ public class Review {
 
     @Column(name="column")
     private String comment;
+
+
 
 }
