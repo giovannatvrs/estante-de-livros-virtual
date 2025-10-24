@@ -8,6 +8,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.util.List;
+import java.util.Set;
 
 
 @Getter
@@ -33,7 +34,9 @@ public class Bookshelf {
     @Column(name="bookshelf_description")
     private String description;
 
-    @OneToMany(mappedBy = "bookshelf")
+    @ManyToMany
     private List<Book> books;
+
+
 
 }

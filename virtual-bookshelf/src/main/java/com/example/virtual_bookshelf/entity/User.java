@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.util.List;
+import java.util.Set;
 
 @Getter
 @Setter
@@ -26,17 +27,17 @@ public class User {
     @Column(name="user_email")
     private String email;
 
-    @Column(name="password")
+    @Column(name="user_password")
     private String password;
 
-    @Column(name="profile_picture")
+    @Column(name="user_profile_picture")
     private String profilePicture;
 
     @OneToMany(mappedBy = "user")
-    private List<Review> reviews;
+    private Set<Review> reviews;
 
     @OneToMany(mappedBy = "user")
-    private List<Bookshelf> lists;
+    private Set<Bookshelf> bookshelves;
 
 
 }

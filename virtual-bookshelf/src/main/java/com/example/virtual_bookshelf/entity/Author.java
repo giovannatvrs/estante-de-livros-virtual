@@ -1,28 +1,31 @@
 package com.example.virtual_bookshelf.entity;
 
+
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.List;
 import java.util.Set;
 
-@Setter
-@Getter
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name="Publisher")
+@Setter
+@Getter
+@Table(name="Author")
 @Entity
-public class Publisher {
+public class Author {
     @Id
-    @GeneratedValue(strategy= GenerationType.IDENTITY)
-    @Column(name="publisher_id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name="author_id")
     private long id;
 
-    @Column(name="publisher_name")
+    @Column(name="author_name")
     private String name;
 
-    @OneToMany(mappedBy = "publisher")
+    @ManyToMany(mappedBy = "authors")
     private Set<Book> books;
+
 }

@@ -6,6 +6,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.time.Instant;
 
 
 @AllArgsConstructor
@@ -19,19 +20,20 @@ public class Review {
     ReviewId reviewId;
 
     @ManyToOne
-    @MapsId("user_id")
+    @MapsId("userId")
     private User user;
 
     @ManyToOne
-    @MapsId("book_id")
+    @MapsId("bookId")
     private Book book;
 
     @Column(name="rating")
     private int rating;
 
-    @Column(name="column")
+    @Column(name="comment")
     private String comment;
 
-
+    @Column(name="created_at")
+    private Instant createdAt;
 
 }
