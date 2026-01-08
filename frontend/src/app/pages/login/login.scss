@@ -22,7 +22,7 @@ main{
 
 h1{
     margin-bottom: 35px;
-    font-size: 25px;
+    font-size: clamp(0.875rem, 2vw + 1rem, 1.875rem);;
 }
 
 label, .ultimo{
@@ -30,7 +30,7 @@ label, .ultimo{
 }
 
 input{
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     border: 1px solid #C2C2C2;
     border-radius: 5px;
     padding: 5px;
@@ -46,7 +46,8 @@ input{
     height: 40px;
     border-style: none;
     font-size: 12px;
-    margin-bottom: 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     cursor: pointer;
 }
 
@@ -60,11 +61,36 @@ div{
 #password-link{
     display: block;
     font-size: 10px;
-    margin-bottom: 40px;
     text-align: end;
 }
 
 p{
     color: #FA664C;
     font-size: 12px;
+}
+
+
+
+
+
+@media (max-width: 500px){
+
+    main{
+        width: 60%;
+        height: 380px;
+    }
+    
+}
+
+@media (max-width: 320px){
+
+    main{
+        width: 60%;
+        height: 350px;
+    }
+    .sign-button{
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    
 }
