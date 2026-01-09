@@ -11,8 +11,8 @@ body{
 }
 
 main{
-    width: 23%;
-    height: 350px;
+    width: 20%;
+    height: 440px;
     background-color: white;
     border-radius: 5px;
     box-shadow: 0 0 4px 2px rgba(77, 76, 76, 0.25);
@@ -33,7 +33,7 @@ input{
     margin-bottom: 30px;
     border: 1px solid #C2C2C2;
     border-radius: 5px;
-    padding: 5px;
+    padding: 10px;
 }
 
 
@@ -66,18 +66,48 @@ div{
 
 p{
     color: #FA664C;
-    font-size: 12px;
+    font-size: 14px;
+    margin-top: 10px;
 }
 
 
+@media (max-width: 1000px){
 
+    main{
+        width: 36%;
+    }
+    .sign-button{
+        width: 130px;
+    }
+    
+}
+
+@media (max-width: 700px){
+
+    main{
+        width: 40%;
+    }
+    
+}
+
+@media (max-width: 600px){
+
+    main{
+        width: 45%;
+    }
+    
+}
 
 
 @media (max-width: 500px){
 
     main{
-        width: 60%;
         height: 380px;
+    }
+    .sign-button{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        width: 100px;
     }
     
 }
@@ -85,12 +115,12 @@ p{
 @media (max-width: 320px){
 
     main{
-        width: 60%;
+        width: 50%;
         height: 350px;
     }
     .sign-button{
-        margin-top: 40px;
-        margin-bottom: 40px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
     
 }
