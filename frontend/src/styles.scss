@@ -5,3 +5,12 @@
     padding: 0;
     
 }
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}

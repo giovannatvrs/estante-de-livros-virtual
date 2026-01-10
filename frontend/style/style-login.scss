@@ -7,4 +7,35 @@ h1, p{
     text-align: center;
 }
 
+label, .ultimo{
+    margin-bottom: 5px;
+}
+
+input{
+    margin-bottom: 30px;
+    border: 1px solid #C2C2C2;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+p{
+    color: #FA664C;
+    font-size: 12px;
+    margin-top: 10px;
+    a{
+        color: #FA664C;
+    }
+}
+
+button{
+    background-color: #FA664C;
+    color: white;
+    border-radius: 20px;
+    height: 40px;
+    border-style: none;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+
 
