@@ -20,7 +20,7 @@ import java.util.Set;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name="User")
+@Table(name="users")
 @Entity
 @EntityListeners(AuditingEntityListener.class)
 public class User implements UserDetails, Principal {
