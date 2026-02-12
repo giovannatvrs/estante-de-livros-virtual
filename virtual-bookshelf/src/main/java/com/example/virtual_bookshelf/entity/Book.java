@@ -13,26 +13,22 @@ import java.util.Set;
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name="Book")
+@Table(name="books")
 @Entity
 public class Book {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="book_id")
-    private long id;
+    private Long id;
 
-    @Column(name="book_title")
+    @Column(name="title", nullable = false)
     private String title;
 
-    @Column(name="ISBN")
-    private String ISBN;
+    @Column(name="isbn")
+    private String isbn;
 
     @Column(name="genre")
     private String genre;
-
-    @Enumerated(EnumType.STRING)
-    @Column(name="book_status")
-    private StatusLivro status;
 
     @OneToMany(mappedBy = "book")
     Set<Review> reviews;
@@ -40,16 +36,5 @@ public class Book {
     @ManyToMany
     private Set<Bookshelf> bookshelves;
 
-    @ManyToOne
-    @JoinColumn(name="publisher_id", nullable = false)
-    private BookPublisher publisher;
-
-    @ManyToMany
-    @JoinTable(
-            name="Book_Author",
-            joinColumns = @JoinColumn(name="book_id"),
-            inverseJoinColumns = @JoinColumn(name="author_id")
-    )
-    private Set<Author> authors;
     
 }

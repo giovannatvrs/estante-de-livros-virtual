@@ -11,7 +11,7 @@ body{
 }
 
 main{
-    width: 60%;
+    width: 20%;
     height: 440px;
     background-color: white;
     border-radius: 5px;
@@ -25,9 +25,31 @@ h1{
     font-size: clamp(0.875rem, 2vw + 1rem, 1.875rem);;
 }
 
+label, .ultimo{
+    margin-bottom: 5px;
+}
+
+input{
+    margin-bottom: 30px;
+    border: 1px solid #C2C2C2;
+    border-radius: 5px;
+    padding: 10px;
+}
 
 
 
+.sign-button{
+    background-color: #FA664C;
+    color: white;
+    border-radius: 20px;
+    width: 120px;
+    height: 40px;
+    border-style: none;
+    font-size: 12px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
 
 div{
     display: flex;
@@ -36,72 +58,69 @@ div{
     justify-content: center;
 }
 
-button{
-    margin-top: 50px;
-    margin-bottom: 50px;
-    width: 130px;
-}
-
 #password-link{
     display: block;
     font-size: 10px;
     text-align: end;
-    margin-bottom: 10px;
-    font-weight: 300;
-    color: black;
+}
+
+p{
+    color: #FA664C;
+    font-size: 14px;
+    margin-top: 10px;
 }
 
 
+@media (max-width: 1000px){
 
-@media (min-width: 500px){
     main{
-        width: 50%;
+        width: 36%;
     }
+    .sign-button{
+        width: 130px;
+    }
+    
 }
 
-@media (min-width: 600px){
+@media (max-width: 700px){
+
     main{
         width: 40%;
     }
+    
 }
 
+@media (max-width: 600px){
 
-@media (min-width: 768px){
     main{
-        width: 35%;
+        width: 45%;
     }
+    
 }
 
 
-@media (min-width: 940px){
+@media (max-width: 500px){
+
     main{
-        width: 30%;
+        height: 380px;
     }
-}
-
-@media (min-width: 1100px){
-    main{
-        width: 25%;
-        height: 450px;
-        font-size: 14px;
+    .sign-button{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        width: 100px;
     }
     
 }
 
 @media (max-width: 320px){
-    main{
-        width: 65%;
-        height: 360px;
-    }
 
+    main{
+        width: 50%;
+        height: 350px;
+    }
     .sign-button{
-        margin-top: 30px;
-        margin-bottom: 30px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
     
 }
-
-
-
-
-

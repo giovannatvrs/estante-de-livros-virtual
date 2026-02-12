@@ -15,27 +15,28 @@ import java.util.Set;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name="Bookshelf")
+@Table(name="bookshelves")
 @Entity
 public class Bookshelf {
 
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     @Column(name="bookshelf_id")
-    private long bookShelfId;
+    private Long id;
 
-    @ManyToOne
-    @JoinColumn(name = "user_id", nullable = false)
-    private User user;
-
-    @Column(name = "bookshelf_name")
+    @Column(name = "name", nullable = false)
     private String name;
 
-    @Column(name="bookshelf_description")
+    @Column(name="description")
     private String description;
 
-    @ManyToMany
-    private List<Book> books;
+    @ManyToOne
+    @JoinColumn(name = "fk_user_id")
+    private User user;
+
+
+    @ManyToMany(mappedBy = "bookshelves")
+    private Set<Book> books;
 
 
 
