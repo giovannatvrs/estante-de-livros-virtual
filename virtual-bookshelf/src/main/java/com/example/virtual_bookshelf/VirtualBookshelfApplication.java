@@ -9,7 +9,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 public class VirtualBookshelfApplication {
 
 	public static void main(String[] args) {
-
+		System.out.println("olá");
 		SpringApplication.run(VirtualBookshelfApplication.class, args);
 	}
 

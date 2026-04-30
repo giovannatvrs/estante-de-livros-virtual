@@ -15,7 +15,7 @@ import java.util.Objects;
 @Setter
 @Getter
 @Embeddable
-public class ReviewId implements Serializable {
+public class ReviewKey implements Serializable {
     @Column(name="user_id")
     private long userId;
     @Column(name="book_id")
@@ -25,7 +25,7 @@ public class ReviewId implements Serializable {
     public boolean equals(Object obj) {
         if (this == obj) return true; // Verifica se são a mesma referência
         if (obj == null || getClass() != obj.getClass()) return false; // Verifica null e tipo
-        ReviewId other = (ReviewId) obj; // Converte para o tipo correto
+        ReviewKey other = (ReviewKey) obj; // Converte para o tipo correto
         // Compara os campos-chave para determinar a igualdade
         return Objects.equals(this.userId, other.userId) && Objects.equals(this.bookId, other.bookId);
     }

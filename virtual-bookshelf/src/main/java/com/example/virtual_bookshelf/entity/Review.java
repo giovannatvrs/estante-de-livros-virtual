@@ -13,27 +13,24 @@ import java.time.Instant;
 @NoArgsConstructor
 @Getter
 @Setter
-@Table(name="Review")
+@Table(name="reviews")
 @Entity
 public class Review {
     @EmbeddedId
-    ReviewId reviewId;
+    private ReviewKey id;
 
     @ManyToOne
     @MapsId("userId")
+    @JoinColumn(name="user_id")
     private User user;
 
     @ManyToOne
     @MapsId("bookId")
+    @JoinColumn(name="book_id")
     private Book book;
 
-    @Column(name="rating")
-    private int rating;
-
-    @Column(name="comment")
+    private double note;
     private String comment;
-
-    @Column(name="created_at")
     private Instant createdAt;
 
 }
