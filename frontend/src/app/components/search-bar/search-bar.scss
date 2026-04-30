@@ -1,0 +1,39 @@
+img{
+    width: 18px;
+}
+
+#input-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+   
+}
+
+input{
+    background-color: white;
+    border: none;
+    height: 30px;
+    padding-left: 10px;
+    width: 290px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    font-weight: 200;
+    
+}
+
+input:focus-visible{
+    outline: none;
+}
+
+button{
+    background-color: #FFF8EA;
+    height: 30px;
+    width: 40px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    border-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}

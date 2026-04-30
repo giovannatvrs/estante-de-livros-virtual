@@ -1,16 +1,25 @@
 <header>
     <div id="left-container">
         <img src="logo1.svg">
-        <app-search-bar></app-search-bar>
-        
+        <mat-toolbar>
+            <app-search-bar></app-search-bar>
+        </mat-toolbar>
     </div>
     <div id="right-container">
         <nav>
             <ul>
                 <li>Home</li>
-                <li>Meus livros</li>
+                <li>Meus Livros</li>
             </ul>
         </nav>
+        <div id="user-actions">
+            <img src="user-default-profile-picture.svg" class="user-icons" alt="Foto de perfil do usuário">
+            <span>nome do usuário</span>
+            <img src="arrow-down.svg" alt="Ícone de seta para baixo com objetivo de mostrar mais links relacionados a conta do usuário" class="user-icons" id="arrow-down">
+        </div>
+        <div id="notifications">
+            <img src="notification-icon.svg" alt="Ícone de notificações" id="notification-icon">
+        </div>
     </div>
     
 </header>
