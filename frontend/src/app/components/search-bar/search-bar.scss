@@ -12,13 +12,13 @@ img{
 input{
     background-color: white;
     border: none;
-    height: 30px;
+    height: 40px;
     padding-left: 10px;
-    width: 290px;
+    width: 400px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     font-weight: 200;
-    
+    font-size: 1rem;
 }
 
 input:focus-visible{
@@ -27,7 +27,7 @@ input:focus-visible{
 
 button{
     background-color: #FFF8EA;
-    height: 30px;
+    height: 40px;
     width: 40px;
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;
