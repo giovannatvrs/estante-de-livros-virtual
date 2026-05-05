@@ -2,7 +2,7 @@
     <div id="left-container">
         <img src="logo1.svg">
         <mat-toolbar>
-            <app-search-bar></app-search-bar>
+            <app-search-bar (textEvent)="searchResult($event)"></app-search-bar>
         </mat-toolbar>
     </div>
     <div id="right-container">

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { SearchBar } from '../search-bar/search-bar';
 import { MatToolbar } from '@angular/material/toolbar';
 @Component({
@@ -8,5 +8,9 @@ import { MatToolbar } from '@angular/material/toolbar';
   styleUrl: './header.scss',
 })
 export class Header {
+  @Output() data = new EventEmitter<string>()
 
+  searchResult(text: string){
+    this.data.emit(text)
+  }
 }

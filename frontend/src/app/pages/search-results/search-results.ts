@@ -8,5 +8,10 @@ import { Header } from '../../components/header/header';
   styleUrl: './search-results.scss',
 })
 export class SearchResults {
+  searchResult = '';
 
+  handleText(text: string){
+    this.searchResult = text;
+    console.log('Texto do input no avô:', this.searchResult);
+  }
 }

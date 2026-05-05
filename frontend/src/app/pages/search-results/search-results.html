@@ -1,6 +1,6 @@
-<app-header></app-header>
+<app-header (data)="handleText($event)"></app-header>
 
 <main>
-    <h1>Resultados para "":</h1>
+    <h1>Resultados para "{{searchResult}}":</h1>
 </main>
 

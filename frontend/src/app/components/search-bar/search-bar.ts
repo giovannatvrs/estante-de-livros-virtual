@@ -1,15 +1,22 @@
-import { Component, inject } from '@angular/core';
-import { OverlayModule } from '@angular/cdk/overlay';
-import { SearchBarService } from '../../services/search-bar-service';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-search-bar',
-  imports: [OverlayModule],
+  imports: [],
   templateUrl: './search-bar.html',
   styleUrl: './search-bar.scss',
 })
 export class SearchBar {
-  searchBarService = inject(SearchBarService)
-  overlayOpen = this.searchBarService.overlayOpen;
+  @Output() textEvent = new EventEmitter<string>();
 
+  onSubmit(event: any){
+    event.preventDefault();
+
+
+    const input = (event.target as HTMLFormElement)
+    .querySelector('input') as HTMLInputElement;
+
+    const value = input.value;
+    this.textEvent.emit(value);
+  }
 }

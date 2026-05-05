@@ -1,14 +1,6 @@
-<form>
-    <div id="input-wrapper" cdkOverlayOrigin #overlayPosition="cdkOverlayOrigin">
-        <input type="search" aria-label="Pesquisar livros" placeholder="Pesquise um livro..." (click)="overlayOpen.set(true)">
+<form (submit) = "onSubmit($event)">
+    <div id="input-wrapper">
+        <input type="search" aria-label="Pesquisar livros" placeholder="Pesquise um livro...">
         <button type="submit"><img src="magnifying-glass-search-icon.svg" alt="Lupa de pesquisa" id="search-icon"></button>
     </div>
-
-    <ng-template 
-    cdkConnectedOverlay 
-    [cdkConnectedOverlayOrigin]="overlayPosition" 
-    [cdkConnectedOverlayOpen]="overlayOpen()"
-    (overlayOutsideClick)="overlayOpen.set(false)">
-        hello
-    </ng-template>
 </form>
